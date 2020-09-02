@@ -1,0 +1,519 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home {
+    background: rgb(193, 250, 193);
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    background: green;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background:  rgb(197, 230, 78);
+}
+
+.l-head {
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(109, 109, 218);
+    font-size: 1.05rem;
+}
+i {
+    color: rgb(109, 109, 218);
+}
+.whitei {
+    color: white;
+}
+
+/* navbar */
+#navbar {
+    background: white;
+    position: sticky;
+    padding-top: 0.75rem;
+}
+
+#navbar .nav-logo {
+    font-size: 1.75rem;
+}
+
+#navbar .navbar {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar ul li {
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar ul li a {
+    color:white;
+    padding: 0.75rem;
+    margin: 0.0.25rem;
+}
+
+/* showcase */
+
+#showcase {
+    background: url('images/photo-1526256262350-7da7584cf5eb.jpg')no-repeat center center/cover;
+    height: 100vh;
+    margin-top: 0;
+    
+}
+
+#showcase, .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    bottom: 0;;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#showcase .showcase-content .header {
+    font-size: 3rem;
+    color: white;
+}
+
+#showcase .showcase-content .para {
+    font-size: 1.75;
+    color: white;
+    padding-top: 0;
+}
+
+/* article */
+#article {
+    background: rgb(134, 134, 255);
+    
+}
+
+#article .article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 4rem 4rem 0rem;
+    color: white;
+}
+
+#article .article .doctors {
+    text-align: center;
+}
+
+#article .article .doctors h3 {
+    font-size: 1.75rem;
+    color: white;
+}
+
+#article .article .doctors P {
+    color: rgb(209, 243, 157);
+}
+
+/* Second Article */
+
+#article1 {
+    display: grid;
+    background: white;
+    padding: 0;
+    background: rgb(208, 252, 208);
+}
+.article1-img {
+    padding: 2rem 2rem 2rem 0;
+}
+
+.article1-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    padding: 0;
+}
+
+.article1-write {
+    padding: 5rem;
+}
+
+.article1-write p {
+    font-size: 1rem;
+}
+
+/* third article */
+
+#article2 {
+    background: url('./images/ARTICLE2.jpg')no-repeat center center/cover;
+    height: 72vh;
+    padding: -3rem;
+}
+
+#article2 .article2-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    background-color: rgba(10, 65, 99, 0.4);
+    padding: 2rem 16rem;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+
+.items {
+    padding: 2rem;
+    position: center;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+}
+.items h3 {
+    align-content: center;
+    padding-left: 2rem;
+}
+
+.items i {
+    display: grid;
+    justify-content: center;
+    position: center;
+}
+
+#form {
+    padding: 3rem;
+    background: rgb(85, 85, 184);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+
+.form-write {
+    padding: 2rem 5rem 2rem 2rem;
+}
+
+.formhead1 {
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+.formhead3, .paraform {
+    color: white; 
+    padding-bottom: 3rem;  
+}
+
+#contact {
+    background: rgb(208, 252, 208);
+    padding: 2rem;
+    border-radius: 5px;   
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.25rem;
+    color: grey;
+}
+.form-group {
+    padding: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .submit {
+      color: white;
+      background: rgb(85, 85, 184);
+      border-radius: 10px;   
+  }
+
+  textarea {
+      color: grey;
+      height: 100px;
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  .submit:hover {
+    color: white;
+    background: greenyellow;
+    border-radius: 10px;   
+}
+
+/* patners */
+#patners {
+    padding: 3rem;
+    background: white;
+}
+
+#patners .patners-container ul {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 2px;
+    list-style: none;
+}
+
+.patners-head {
+    font-size: 1.75rem;
+    color: rgb(85, 85, 184);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* About */
+
+#about {
+    background: rgb(22, 39, 21);
+    color: white;
+    
+}
+
+#about .about-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
+    padding: 3rem;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+.social:hover i {
+    color: rgb(82, 82, 245);
+}
+
+#about h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1.50rem;
+    color: rgb(208, 252, 208);
+}
+
+.about-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-decoration: none;
+    color: rgb(208, 252, 208);
+}
+
+.about-links a {
+    color: white;
+    
+}
+.about-links a:hover {
+    color: rgb(180, 180, 3);
+}
+
+/* footer */
+.footer {
+    background: rgb(1, 7, 1);
+    color: rgb(208, 252, 208);
+    padding: 0.75rem;
+    text-align: center;
+}
+
+
+@media(max-width: 500px) {
+    #navbar .navbar {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.25rem;
+        padding: 0.25rem 3rem 0.25rem 3rem;
+        font-size: 0.70rem;
+        align-items: center;
+    
+    }
+
+    #nav-menu ul li {
+        display: grid;
+        grid-template-rows:repeat(4, 1fr);
+        grid-gap: 0.25rem ;
+    }
+    #showcase h3 {
+        font-size: 1.70rem;
+        padding-bottom: 1rem;
+    }
+
+    #article .article {
+        display: none;
+    }
+
+    .article1-container img {
+        display: none;
+    }
+
+    .article1-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .article1-write {
+        font-size: 1rem;
+        padding: 5rem;
+        align-items: center;
+    }
+
+    #article2 .article2-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        grid-row-gap: 1rem;
+        grid-column-gap: 3rem;
+    }
+
+    #article2 .article2-container .items {
+        font-size: 6px;
+        align-content: center;
+        padding: 1rem 1rem;
+    }
+
+    #article2 .article2-container .items h3 {
+        text-align: center;
+    }
+
+    #form {
+        padding: 1rem;
+    }
+    
+    .form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+    .form-write {
+        padding: 2rem;
+    }
+    
+    .formhead1 {
+        color: white;
+        font-size: 3rem;
+        padding-bottom: 10px;
+    }
+    .formhead3, .paraform {
+        color: white; 
+        padding-bottom: 3rem;  
+    }
+    #patners {
+        padding: 1rem;
+    }
+    
+    #patners .patners-container ul {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-gap: 2px;
+        list-style: none;
+    }
+    
+    .patners-head {
+        font-size: 1.75rem;
+        color: rgb(85, 85, 184);
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    #about {
+        background: rgb(22, 39, 21);
+        color: white;
+        border-bottom: #444 dotted 1px;
+        
+    }
+    
+    #about .about-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        padding: 2rem;
+        
+    }
+    
+    .social {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: rgb(154, 206, 34);
+        padding: 1rem 1rem 1rem 5rem;
+        border-radius: 5px;
+        align-content: center;
+    
+        
+    }
+    
+    #about h3 {
+        font-size: 2.5rem;
+        padding-bottom: 1.50rem;
+        color: rgb(208, 252, 208);
+    }
+    
+    .about-links {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-decoration: none;
+        color: rgb(208, 252, 208);
+        background: rgb(154, 206, 34);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    
+    .about-links a {
+        color: white;
+        
+    }
+    
+    /* footer */
+    .footer {
+        background: rgb(1, 7, 1);
+        color: rgb(208, 252, 208);
+        padding: 0.75rem;
+        text-align: center;
+    }
+    
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
